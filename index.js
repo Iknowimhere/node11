@@ -34,8 +34,6 @@ fs.writeFile("./demo.txt","hello",(err)=>{
 //     console.log(err);
 // })
 
-
-
 // async function getData(){
 //     try {
 //         let data=await fs.readFile("./index.txt")

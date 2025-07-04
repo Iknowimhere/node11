@@ -1,7 +1,6 @@
 import { createServer } from "http";
 
-//callback-req handler function
-//req,res--objects
+
 let server=createServer((req,res)=>{
     res.end("Hello world")
 })
@@ -12,5 +11,3 @@ server.listen(3000,()=>{
 })
 
 
-//http--default port -80
-//https--default port -443
