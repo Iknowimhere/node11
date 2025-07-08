@@ -12,8 +12,6 @@ function auth(req,res,next){
     next()
 }
 
-
-
 // app.use(parse)
 // app.use(function(req,res,next){
 //     console.log("parse function");
