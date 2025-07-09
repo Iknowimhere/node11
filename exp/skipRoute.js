@@ -2,18 +2,20 @@
 import express from 'express'
 const app = express();
 
-
-//skips 
-app.get('/',(req, res, next) => {
+app.use("/",(req, res, next) => {
   console.log('Middleware1');
   next('route');
 },(req,res,next)=>{
     console.log('middleware2');
     next()
-}, (req, res) => {
+})
+
+//skips 
+app.get('/', (req, res) => {
   res.send('Route A');
 });
 
+//prints
 app.get('/', (req, res) => {
   res.send('Route B');
 });
