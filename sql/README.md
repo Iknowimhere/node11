@@ -23,10 +23,6 @@ CREATE TABLE address (
 ## Example SQL Insert Queries
 
 ```sql
--- Insert into users table
-INSERT INTO users (username, email, city)
-VALUES ('umashankar', 'umashankr@gmail.com', ',); drop table users;');
-
 -- Insert into address table
 INSERT INTO address (user_id, street, city, zipcode)
 VALUES (1, '123 Main St', 'Delhi', '110001');
