@@ -1,11 +1,10 @@
 const prisma=require("../config/db")
 const postTodo=async(req,res)=>{
-    let {task,completed}=req.body
+    let {task}=req.body
     try {
         let todo=await prisma.todo.create({
             data:{
-                task,
-                completed:completed
+                task
             }
         })
         res.json(todo)
